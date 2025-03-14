@@ -15,6 +15,10 @@ app.get('/api/data', (req, res) => {
     res.json({ message: 'API başarılı bir şekilde çalışıyor.' });
 });
 
+app.get('/api/get', (req, res) => {
+    res.json({ message: 'son güncelleme çalışıyor' });
+});
+
 // Sunucuyu başlat
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
